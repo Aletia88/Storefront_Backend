@@ -74,6 +74,25 @@ Navigate to the root directory and run the command below to migrate the database
 
 ```
 
+## Environmental Variables Set up
+Bellow are the environmental variables that needs to be set in a `.env` file. This is the default setting that I used for development, but you can change it to what works for you. 
+
+**NB:** The given values are used in development and testing but not in production. 
+```
+PORT=127.0.0.1
+POSTGRES_HOST="localhost"
+POSTGRES_USER="###"
+POSTGRES_PASSWORD="###"
+POSTGRES_DB="storefront"
+POSTGRES_TEST_DB="storefront"
+TOKEN_KEY=###
+ENV=test
+BCRYPT_PASSWORD=###
+SALT_ROUNDS="10"
+
+```
+
+
 ## Start App
 `yarn watch` or `npm run start`
 
