@@ -27,7 +27,7 @@ const setUser = async (req: Request, res: Response) => {
       );
       return false;
     }
-    const user: User = await userStore.setUser({
+    const user: User = await userStore.create({
       firstname,
       lastname,
       username,
